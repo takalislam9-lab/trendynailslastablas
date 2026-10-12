@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — Trendy Nails · Madrid</title>
+<meta name="description" content="Servicios de Trendy Nails en Madrid.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header" class="scrolled">
+  <a href="index.html" class="logo" aria-label="Trendy Nails, inicio"><span class="logo-mark">T</span><span class="logo-text"><span class="script">Trendy Nails</span><small>centro de estética</small></span></a>
+  <nav id="nav" aria-label="Navegación principal"><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="index.html#galeria">Galería</a></li><li><a href="index.html#opiniones">Opiniones</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+</header>
+
+<div class="page-hero">
+  <span class="eyebrow">Nuestro catálogo</span>
+  <h1>Servicios</h1>
+  <p>Organizados por categoría. Toca una tarjeta para ver los servicios y pedir precio o cita.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="unas">Uñas</button>
+  <button class="tab-btn" data-tab="mirada">Mirada</button>
+  <button class="tab-btn" data-tab="depilacion">Depilación</button>
+  <button class="tab-btn" data-tab="facial">Facial</button>
+  
+</div>
+
+<div class="tab-panel active" id="unas">
+  <div class="tab-intro"><span class="script">Manos</span><h2>Manicura y pedicura</h2><p>Manos y pies perfectos.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('unas')"><img src="u_semi.jpg" alt="Uñas" loading="lazy"><div class="cat-card-text"><h3>Uñas</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="mirada">
+  <div class="tab-intro"><span class="script">Mirada</span><h2>Pestañas y cejas</h2><p>Una mirada con curva.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('mirada')"><img src="u_pestanas.jpg" alt="Mirada" loading="lazy"><div class="cat-card-text"><h3>Mirada</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="depilacion">
+  <div class="tab-intro"><span class="script">Suave</span><h2>Depilación</h2><p>Piel suave.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('depilacion')"><img src="maps_04.jpg" alt="Depilación" loading="lazy"><div class="cat-card-text"><h3>Depilación</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="facial">
+  <div class="tab-intro"><span class="script">Piel</span><h2>Tratamientos faciales</h2><p>Sal relajada y perfecta.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('facial')"><img src="u_facial.jpg" alt="Facial" loading="lazy"><div class="cat-card-text"><h3>Facial</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+
+<p class="services-note">¿Quieres saber precios o tienes dudas? Escríbenos por WhatsApp al <a href="https://wa.me/34656394104" target="_blank" rel="noopener" style="color:var(--red)">656 39 41 04</a> y te asesoramos sin compromiso.</p>
+
+<div class="modal-overlay" id="modal-unas"><div class="modal">
+  <button class="modal-close" onclick="closeModal('unas')" aria-label="Cerrar">×</button>
+  <h3>Uñas</h3><p class="modal-sub">Manos y pies</p>
+  <div class="svc-row"><div><div class="svc-name">Manicura</div><span class="svc-desc">Esmaltado tradicional o semipermanente.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Pedicura</div><span class="svc-desc">Pies cuidados y bonitos.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Mani + pedi</div><span class="svc-desc">El combo completo en una cita.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34656394104?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20u%C3%B1as" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-mirada"><div class="modal">
+  <button class="modal-close" onclick="closeModal('mirada')" aria-label="Cerrar">×</button>
+  <h3>Mirada</h3><p class="modal-sub">Pestañas y cejas</p>
+  <div class="svc-row"><div><div class="svc-name">Lifting de pestañas</div><span class="svc-desc">Curva natural y duradera.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Diseño de cejas con hilo</div><span class="svc-desc">Precisión y limpieza.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34656394104?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mirada" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-depilacion"><div class="modal">
+  <button class="modal-close" onclick="closeModal('depilacion')" aria-label="Cerrar">×</button>
+  <h3>Depilación</h3><p class="modal-sub">Hilo y cera</p>
+  <div class="svc-row"><div><div class="svc-name">Depilación con hilo</div><span class="svc-desc">Cejas y labio superior.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Depilación con cera</div><span class="svc-desc">Zonas faciales y corporales.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34656394104?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20depilaci%C3%B3n" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-facial"><div class="modal">
+  <button class="modal-close" onclick="closeModal('facial')" aria-label="Cerrar">×</button>
+  <h3>Facial</h3><p class="modal-sub">Limpieza e higiene</p>
+  <div class="svc-row"><div><div class="svc-name">Limpieza facial</div><span class="svc-desc">Para una piel limpia y luminosa.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Higiene facial</div><span class="svc-desc">Cuidado profundo de tu piel.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Tratamiento facial</div><span class="svc-desc">Un momento de relax.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34656394104?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20facial" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+
+<footer>
+  <div class="footer-bottom" style="margin-top:0">
+    <span>Propuesta de diseño para Trendy Nails - demo, no es el sitio web oficial del negocio.</span>
+    <span><a href="aviso-legal.html">Aviso Legal</a> &middot; <a href="politica-privacidad.html">Privacidad</a> &middot; <a href="politica-cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner"><p>Esta web utiliza cookies de terceros (Google Maps) para ofrecerte la mejor experiencia. Puedes aceptar su uso o rechazarlas. <a href="politica-cookies.html">Más información</a></p><div class="cookie-actions"><button onclick="setCookieChoice('rejected')" class="ck-reject">Rechazar</button><button onclick="setCookieChoice('accepted')" class="ck-accept">Aceptar</button></div></div>
+<div class="social-fabs"><a class="wa-fab" href="https://wa.me/34656394104?text=Hola%2C%20quiero%20pedir%20cita%20en%20Trendy%20Nails" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c2.6 1 2.6.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm8.4-18.3A11.8 11.8 0 0 0 1.8 17.7L.2 23.8l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.5Z"/></svg></a></div>
+<script src="main.js"></script>
+</body>
+</html>
